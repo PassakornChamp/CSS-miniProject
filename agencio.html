@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,27 +6,18 @@
     <title>Agencio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="m-0 bg-[#f4f7fc]  px-40 flex flex-col overscroll-auto">
-    <header class="border-2 border-fuchsia-400  flex flex-col lg:h-[960px] h-[850px]">
-      <nav class="flex h-[70px]">
-        <div
-          class="navigator flex flew-row justify-between items-center border-2 border-emerald-200 grow h-[70px]"
-        >
-          <div class="logo basis-1/2 flex flew-row items-center">
-            <img src="png/logo/polygon1.png" alt="logo" class="w-12 h-12" />
-            <img src="png/logo/polygon2.png" alt="logo" class="w-12 h-12" />
-            <h1 class="text-2xl md:text-4xl text-[#0B0757] font-[500]">
+  <body class="flex flex-col bg-[#f4f7fc] px-5 lg:px-40">
+    <header class="flex h-[850px] flex-col bg-white shadow-lg lg:h-[960px]">
+      <nav class="flex h-[70px] items-center px-6">
+        <div class="flex w-full items-center justify-between">
+          <div class="flex items-center">
+            <img src="png/logo/polygon1.png" alt="logo" class="h-12 w-12" />
+            <img src="png/logo/polygon2.png" alt="logo" class="h-12 w-12" />
+            <h1 class="ml-3 text-2xl font-medium text-[#0B0757] md:text-4xl">
               Agencio
             </h1>
           </div>
-          <img
-            src="png/nave/vector.png"
-            alt="menu"
-            class="menu-icon w-8 h-8 mr-7 cursor-pointer lg:hidden"
-          />
-          <div
-            class="menu hidden flex-col basis-1/2 shrink justify-around items-center lg:flex lg:flex-row border-2"
-          >
+          <div class="hidden space-x-6 lg:flex">
             <a
               href="#"
               class="text-base font-medium text-[#1F1E61] hover:underline"
@@ -52,127 +43,451 @@
               class="text-base font-medium text-[#1F1E61] hover:underline"
               >Contact</a
             >
-
             <button
-              class="text-base bg-[#FDD76E] hover:bg-yellow-500 text-black font-bold py-1 px-2 rounded-lg shadow-lg transition duration-300 ease-in-out"
+              class="rounded-lg bg-[#FDD76E] px-4 py-2 font-bold text-black shadow-lg transition duration-300 ease-in-out hover:bg-yellow-500"
             >
               Create Account
             </button>
           </div>
+          <img
+            src="png/nave/vector.png"
+            alt="menu"
+            class="menu-icon h-8 w-8 cursor-pointer lg:hidden"
+          />
         </div>
       </nav>
-      <div class="hero flex  flex-col lg:flex-row h-full  justify-self-center items-center ">
-        <div class="container-text flex flex-col basis-1/2 justify-self-center items-center align-middle text-balance">
-          <div class="text-hero  space-y-10">
-            <p class="text-xs md:text-xl text-[#1374F6] font-[400]">
+      <div
+        class="hero flex h-full flex-col items-center bg-blue-50 lg:flex-row"
+      >
+        <div
+          class="container-text flex flex-col items-center px-6 text-center lg:basis-1/2 lg:items-start lg:px-0 lg:text-left"
+        >
+          <div class="space-y-10">
+            <p class="text-xs font-normal text-[#1374F6] md:text-xl">
               CREATIVE AGENCY
             </p>
-            <div class="text-[48px]  leading-[57px] text-[#0B0757] font-[500]">
-              We are here to give 
-              the best service
-            </div>
- 
-            <P class="text-5xl  text-[#0B0757] font-[500]"></P>
-            <p class="text-base font-normal text-[#8480AE] ">
-              It's crafted with the latest trend of design & coded with all modern
-              approaches. It's a robust & multi-dimensional usable template.
+            <h2
+              class="text-4xl font-medium leading-[57px] text-[#0B0757] lg:text-[48px]"
+            >
+              We are here to give the best service
+            </h2>
+            <p class="text-base font-normal text-[#8480AE]">
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable
+              template.
             </p>
-            <div class="button">
+            <div class="space-x-4">
               <button
-                class="text-base bg-[#FDD76E] hover:bg-yellow-500 text-black font-bold py-1 px-2 rounded-lg shadow-lg transition duration-300 ease-in-out"
+                class="rounded-lg bg-[#1374F6] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-700"
               >
                 Get Started
               </button>
               <button
-                class="text-base bg-[#FDD76E] hover:bg-yellow-500 text-black font-bold py-1 px-2 rounded-lg shadow-lg transition duration-300 ease-in-out"
+                class="rounded-lg border-2 border-[#1374F6] bg-transparent px-4 py-2 font-bold text-[#1374F6] shadow-lg transition duration-300 ease-in-out hover:bg-[#1374F6] hover:text-white"
               >
-                wacth video
+                Watch Video
               </button>
             </div>
           </div>
         </div>
-        <div class="image-hero flex basis-1/2 justify-center items-center">
-          <img src="png/markgroup/image copy.png" alt="hero" class="lg:w-[610px] lg:h-[630px] w-[360px] h-[360px]" />
+        <div class="image-hero flex items-center justify-center lg:basis-1/2">
+          <img
+            src="png/markgroup/image copy.png"
+            alt="hero"
+            class="h-[360px] w-[360px] lg:h-[630px] lg:w-[610px]"
+          />
+        </div>
       </div>
     </header>
-    <div class="service  bg-[#FFFFFF] flex flex-col  ">
-      <div class=" flex  ">
-        <p class="font-[500] text-5xl text-[#0B0757] text-left bg-slate-300">Lets Check Our
-          Services</p>
+    <section class="service bg-white py-20">
+      <div class="mb-12 text-center">
+        <h3 class="text-5xl font-medium text-[#0B0757]">
+          Let's Check Our Services
+        </h3>
       </div>
-      
-      <div class="container-4box  flex flex-col justify-around items-center gap-3 lg:flex-row py-32">
-        <div class="box1 w-[285px] h-[295px] flex flex-col justify-center space-y-4  hover:bg-sky-100 ">
-          <img src="png/severice/greenpic.png" alt="green" class="w-20 h-20" />
-          <p class="font-[500] text-[#0B0757] text-lg">Increase conversion</p>
-          <p class="text-pretty font-[400] text-[#8480AE] text-base">It's crafted with the latest of design & coded with all trendy & modern approaches.</p>
+      <div class="flex flex-col items-center justify-around gap-10 lg:flex-row">
+        <div
+          class="box flex h-[295px] w-[285px] flex-col items-center justify-center space-y-4 transition duration-300 hover:bg-sky-100"
+        >
+          <img src="png/severice/greenpic.png" alt="green" class="h-20 w-20" />
+          <h4 class="text-lg font-medium text-[#0B0757]">
+            Increase conversion
+          </h4>
+          <p class="text-center text-base text-[#8480AE]">
+            It's crafted with the latest of design & coded with all trendy &
+            modern approaches.
+          </p>
         </div>
-        <div class="box2 w-[285px] h-[295px]  flex flex-col justify-center space-y-4  hover:bg-sky-100 ">
-          <img src="png/severice/pinkpic.png" alt="green" class="w-20 h-20" />
-          <p class="font-[500] text-[#0B0757] text-lg">Discussion for idea</p>
-          <p class="text-pretty font-[400] text-[#8480AE] text-base">It's crafted with the latest of design & coded with all trendy & modern approaches.</p>
+        <div
+          class="box flex h-[295px] w-[285px] flex-col items-center justify-center space-y-4 transition duration-300 hover:bg-sky-100"
+        >
+          <img src="png/severice/pinkpic.png" alt="green" class="h-20 w-20" />
+          <h4 class="text-lg font-medium text-[#0B0757]">
+            Discussion for idea
+          </h4>
+          <p class="text-center text-base text-[#8480AE]">
+            It's crafted with the latest of design & coded with all trendy &
+            modern approaches.
+          </p>
         </div>
-        <div class="box3 w-[285px] h-[295px]  flex flex-col justify-center space-y-4   hover:bg-sky-100">
-          <img src="png/severice/bluepic.png" alt="green" class="w-20 h-20" />
-          <p class="font-[500] text-[#0B0757] text-lg">Product analytics</p>
-          <p class="text-pretty font-[400] text-[#8480AE] text-base">It's crafted with the latest of design & coded with all trendy & modern approaches.</p>
+        <div
+          class="box flex h-[295px] w-[285px] flex-col items-center justify-center space-y-4 transition duration-300 hover:bg-sky-100"
+        >
+          <img src="png/severice/bluepic.png" alt="green" class="h-20 w-20" />
+          <h4 class="text-lg font-medium text-[#0B0757]">Product analytics</h4>
+          <p class="text-center text-base text-[#8480AE]">
+            It's crafted with the latest of design & coded with all trendy &
+            modern approaches.
+          </p>
         </div>
-        <div class="box4 w-[285px] h-[295px]  flex flex-col justify-center space-y-4   hover:bg-sky-100">
-          <img src="png/severice/yellowpic.png" alt="green" class="w-20 h-20" />
-          <p class="font-[500] text-[#0B0757] text-lg">Perfect testing</p>
-          <p class="text-pretty font-[400] text-[#8480AE] text-base">It's crafted with the latest of design & coded with all trendy & modern approaches.</p>
+        <div
+          class="box flex h-[295px] w-[285px] flex-col items-center justify-center space-y-4 transition duration-300 hover:bg-sky-100"
+        >
+          <img src="png/severice/yellowpic.png" alt="green" class="h-20 w-20" />
+          <h4 class="text-lg font-medium text-[#0B0757]">Perfect testing</h4>
+          <p class="text-center text-base text-[#8480AE]">
+            It's crafted with the latest of design & coded with all trendy &
+            modern approaches.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="takeYourHand flex flex-row py-32">    
-      <div class="imgeAds flex justify-start relative basis-[50%]">
-        <img src="png/takeYourHand/image.png" alt="takeYourHand" class="w-[445px] h-[570px]" />
-        <img src="png/takeYourHand/dailyOrder.png" alt="dailyOrder" class="w-[155px] h-[165px] absolute top-[60%] right-[85%]" />
+    </section>
+    <section class="takeYourHand flex flex-col items-center py-20 lg:flex-row">
+      <div
+        class="imageAds relative mb-10 flex justify-center lg:mb-0 lg:basis-1/2 lg:justify-start"
+      >
+        <img
+          src="png/takeYourHand/image.png"
+          alt="takeYourHand"
+          class="h-[570px] w-[445px]"
+        />
+        <img
+          src="png/takeYourHand/dailyOrder.png"
+          alt="dailyOrder"
+          class="absolute right-[-15%] top-[60%] h-[165px] w-[155px]"
+        />
       </div>
-      <div class="textAds flex flex-col basis-[50%] justify-end text-balance space-y-5">
-        <p class="font-[500] text-5xl text-[#0B0757] text-left bg-slate-300">We Take The Work
-          Of Your Hand</p>
-        <p class="text-pretty font-[400] text-[#8480AE] text-base">It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable.Nostrum placeat hic, praesent atque ornare minim
+      <div class="textAds flex flex-col space-y-5 px-5 lg:basis-1/2 lg:px-0">
+        <h3 class="text-5xl font-medium text-[#0B0757]">
+          We Take The Work Off Your Hands
+        </h3>
+        <p class="text-base text-[#8480AE]">
+          It's crafted with the latest trend of design & coded with all modern
+          approaches. It's a robust & multi-dimensional usable template. Nostrum
+          placeat hic, praesent atque ornare minim.
         </p>
-        <p class="text-pretty font-[400] text-[#8480AE] text-base">nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatat! Fugit? Nisl dignissimos ratione</p>
-        <div class="button">
+        <p class="text-base text-[#8480AE]">
+          Nihil suscipit aliquet excepteur bibendum cumque facilis senectus
+          habitant aliquid cupidatat! Fugit? Nisl dignissimos ratione.
+        </p>
+        <button
+          class="rounded-lg bg-[#1374F6] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-700"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <section class="pricePlan bg-white py-20">
+      <div class="mb-12 text-center">
+        <h3 class="text-2xl font-medium text-[#8480AE]">Price Plan</h3>
+        <h2 class="text-5xl font-medium text-[#0B0757]">
+          No Extra Charges! Choose Your Plan.
+        </h2>
+      </div>
+      <div class="mx-auto max-w-6xl rounded-lg bg-white p-8 shadow-lg">
+        <div class="overflow-x-auto">
+          <table class="min-w-full divide-y divide-gray-200">
+            <thead>
+              <tr>
+                <th class="px-6 py-3"></th>
+                <th class="px-6 py-3 text-center">
+                  <span class="block text-2xl font-bold text-[#F5A623]"
+                    >$2000</span
+                  >
+                  <span class="block text-lg text-[#0B0757]">Regular</span>
+                </th>
+                <th class="px-6 py-3 text-center">
+                  <span class="block text-2xl font-bold text-[#7ED321]"
+                    >$3000</span
+                  >
+                  <span class="block text-lg text-[#0B0757]">Premium</span>
+                </th>
+                <th class="px-6 py-3 text-center">
+                  <span class="block text-2xl font-bold text-[#4A90E2]"
+                    >$5000</span
+                  >
+                  <span class="block text-lg text-[#0B0757]">Corporate</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200 bg-white">
+              <tr>
+                <td class="px-6 py-4 text-sm text-gray-900">Full Access</td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/x.png"
+                    alt="x"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/x.png"
+                    alt="x"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm text-gray-900">Multiple User</td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/x.png"
+                    alt="x"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm text-gray-900">Refund</td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/x.png"
+                    alt="x"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-sm text-gray-900">24/7 Support</td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <img
+                    src="png/pricePlan/check.png"
+                    alt="check"
+                    class="inline-block h-6 w-6"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4"></td>
+                <td class="px-6 py-4 text-center">
+                  <button
+                    class="mt-2 w-full rounded-lg bg-[#F5A623] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-orange-500"
+                  >
+                    Choose Plan
+                  </button>
+                  <p class="mt-2 text-sm text-[#8480AE]">
+                    Get your 30 days free trial.
+                  </p>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <button
+                    class="mt-2 w-full rounded-lg bg-[#7ED321] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-green-500"
+                  >
+                    Choose Plan
+                  </button>
+                  <p class="mt-2 text-sm text-[#8480AE]">
+                    Get your 30 days free trial.
+                  </p>
+                </td>
+                <td class="px-6 py-4 text-center">
+                  <button
+                    class="mt-2 w-full rounded-lg bg-[#4A90E2] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-500"
+                  >
+                    Choose Plan
+                  </button>
+                  <p class="mt-2 text-sm text-[#8480AE]">
+                    Get your 30 days free trial.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial bg-white py-20">
+      <div
+        class="mx-auto flex max-w-4xl flex-col items-center lg:flex-row lg:space-x-10"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="path-to-your-image.jpg"
+            alt="testimonial"
+            class="h-64 w-64 rounded-lg shadow-lg lg:h-80 lg:w-80"
+          />
+        </div>
+        <div class="mt-10 lg:mt-0 lg:w-2/3">
+          <p class="text-lg font-light text-[#8480AE]">
+            "It's awesome service. Land from day very fill that midst stars one
+            dominion. Itself was let that divided itself god don't subdue
+            wherein let behold over he whose of sea moved called."
+          </p>
+          <p class="mt-5 text-xl font-semibold text-[#0B0757]">Jack Smith</p>
+          <p class="text-[#8480AE]">CEO of CABC</p>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter bg-white py-20">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-semibold text-[#0B0757]">
+          Sign up to our newsletter
+        </h2>
+        <p class="mt-4 text-lg text-[#8480AE]">
+          Receive latest news, updates and many other news every week.
+        </p>
+        <form class="mt-6 flex items-center justify-center">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-full max-w-md rounded-l-lg border border-r-0 border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#1374F6]"
+          />
           <button
-            class="text-base bg-[#FDD76E] hover:bg-yellow-500 text-black font-bold py-1 px-2 rounded-lg shadow-lg transition duration-300 ease-in-out"
+            type="submit"
+            class="rounded-r-lg bg-[#1374F6] p-3 text-white"
           >
-            Get Started
+            Subscribe
           </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-white py-10">
+      <div
+        class="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4"
+      >
+        <div>
+          <h3 class="text-xl font-semibold text-[#0B0757]">Agencio</h3>
+          <p class="mt-4 text-sm text-[#8480AE]">
+            Merged moving recently month creature for shalt and a divide the the
+            day seas male shall that doesn't won't for him. Male. Draw a great
+            nigh.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-[#0B0757]">Features</h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Analytics</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Auditory</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Activity</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Publishing</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-[#0B0757]">About</h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Company</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Careers</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-[#0B0757]">Resources</h3>
+          <ul class="mt-4 space-y-2">
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Application Security</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Software Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >Supply Chain</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-sm text-[#8480AE] hover:underline"
+                >House Regulation</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="pricePlan flex flex-col">
-      <div class="taxtAds flex flex-col bg-red-300">
-        <p>price plan</p>
-        <p>No Extra Charges!Choose Your Plan.</p>
-      </div>
-      <div class="table bg-slate-600 ">
-        <div class="headTable flex flex-row bg-sky-300 justify-center ">
-          <div class="headTable1 basis-[25%] py-14 border-2 text-center">Basic</div>
-          <div class="headTable2 basis-[25%] py-14 border-2 text-center">Standard</div>
-          <div class="headTable3 basis-[25%] py-14 border-2 text-center">Premium</div>
-          <div class="headTable4 basis-[25%] py-14 border-2 text-center">Premium</div>
-        </div>
-        <div class="headTable flex flex-row bg-sky-300 justify-center ">
-          <div class="headTable1 basis-[25%] py-7 border-2 text-center">Full Access</div>
-          <div class="headTable2 basis-[25%] py-7 border-2 flex justify-center ">
-            <img src="png/pricePlan/x.png" alt="x" class="w-6 h-6 bg-slate-500" />
-          </div>
-          <div class="headTable3 basis-[25%] py-7 border-2 text-center flex justify-center">
-            <img src="png/pricePlan/x.png" alt="x" class="w-6 h-6 bg-slate-500" />
-          </div>
-
-
-          
-          <div class="headTable3 basis-[25%] py-7 border-2 text-center flex justify-center">
-            <img src="png/pricePlan/right.png" alt="x" class="w-6 h-6 bg-slate-500" />
-          </div>
-        </div>
-
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
