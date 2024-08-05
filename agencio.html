@@ -6,7 +6,7 @@
     <title>Agencio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col bg-[#f4f7fc] px-5 lg:px-40">
+  <body class="flex flex-col xl:px-56">
     <header class="flex h-[850px] flex-col bg-white shadow-lg lg:h-[960px]">
       <nav class="flex h-[70px] items-center px-6">
         <div class="flex w-full items-center justify-between">
@@ -67,7 +67,7 @@
               CREATIVE AGENCY
             </p>
             <h2
-              class="text-4xl font-medium leading-[57px] text-[#0B0757] lg:text-[48px]"
+              class="text-balance text-4xl font-medium leading-[57px] text-[#0B0757] lg:text-[48px]"
             >
               We are here to give the best service
             </h2>
@@ -187,171 +187,257 @@
         </button>
       </div>
     </section>
-    <section class="pricePlan bg-white py-20">
-      <div class="mb-12 text-center">
-        <h3 class="text-2xl font-medium text-[#8480AE]">Price Plan</h3>
-        <h2 class="text-5xl font-medium text-[#0B0757]">
-          No Extra Charges! Choose Your Plan.
-        </h2>
-      </div>
-      <div class="mx-auto max-w-6xl rounded-lg bg-white p-8 shadow-lg">
-        <div class="overflow-x-auto">
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead>
-              <tr>
-                <th class="px-6 py-3"></th>
-                <th class="px-6 py-3 text-center">
-                  <span class="block text-2xl font-bold text-[#F5A623]"
-                    >$2000</span
+    <section class="priceplan bg-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="mb-16 text-center">
+          <h3 class="mb-2 text-xl text-gray-500">Price Plan</h3>
+          <h2 class="text-4xl font-bold text-indigo-900">
+            No Extra Charges!Choose<br />Your Plan.
+          </h2>
+        </div>
+
+        <div class="mx-auto max-w-5xl">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Regular Plan -->
+            <div class="rounded-lg border p-8 text-center">
+              <h3 class="mb-2 text-3xl font-bold text-yellow-500">$2000</h3>
+              <p class="mb-6 text-gray-600">Regular</p>
+              <ul class="mb-8 space-y-4">
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Full Access</span>
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                  <span class="block text-lg text-[#0B0757]">Regular</span>
-                </th>
-                <th class="px-6 py-3 text-center">
-                  <span class="block text-2xl font-bold text-[#7ED321]"
-                    >$3000</span
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Multiple User</span>
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                  <span class="block text-lg text-[#0B0757]">Premium</span>
-                </th>
-                <th class="px-6 py-3 text-center">
-                  <span class="block text-2xl font-bold text-[#4A90E2]"
-                    >$5000</span
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Refund</span>
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                  <span class="block text-lg text-[#0B0757]">Corporate</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200 bg-white">
-              <tr>
-                <td class="px-6 py-4 text-sm text-gray-900">Full Access</td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/x.png"
-                    alt="x"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/x.png"
-                    alt="x"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 text-sm text-gray-900">Multiple User</td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/x.png"
-                    alt="x"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 text-sm text-gray-900">Refund</td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/x.png"
-                    alt="x"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4 text-sm text-gray-900">24/7 Support</td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <img
-                    src="png/pricePlan/check.png"
-                    alt="check"
-                    class="inline-block h-6 w-6"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td class="px-6 py-4"></td>
-                <td class="px-6 py-4 text-center">
-                  <button
-                    class="mt-2 w-full rounded-lg bg-[#F5A623] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-orange-500"
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">24/7 Support</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    Choose Plan
-                  </button>
-                  <p class="mt-2 text-sm text-[#8480AE]">
-                    Get your 30 days free trial.
-                  </p>
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <button
-                    class="mt-2 w-full rounded-lg bg-[#7ED321] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-green-500"
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+              <button
+                class="w-full rounded-lg bg-yellow-500 py-3 font-semibold text-white transition duration-300 hover:bg-yellow-600"
+              >
+                Choose Plan
+              </button>
+              <p class="mt-4 text-sm text-gray-500">
+                Get your 30 days free trial
+              </p>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="rounded-lg border p-8 text-center">
+              <h3 class="mb-2 text-3xl font-bold text-green-500">$3000</h3>
+              <p class="mb-6 text-gray-600">Premium</p>
+              <ul class="mb-8 space-y-4">
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Full Access</span>
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    Choose Plan
-                  </button>
-                  <p class="mt-2 text-sm text-[#8480AE]">
-                    Get your 30 days free trial.
-                  </p>
-                </td>
-                <td class="px-6 py-4 text-center">
-                  <button
-                    class="mt-2 w-full rounded-lg bg-[#4A90E2] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-500"
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Multiple User</span>
+                  <svg
+                    class="h-5 w-5 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    Choose Plan
-                  </button>
-                  <p class="mt-2 text-sm text-[#8480AE]">
-                    Get your 30 days free trial.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Refund</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">24/7 Support</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+              <button
+                class="w-full rounded-lg bg-green-500 py-3 font-semibold text-white transition duration-300 hover:bg-green-600"
+              >
+                Choose Plan
+              </button>
+              <p class="mt-4 text-sm text-gray-500">
+                Get your 30 days free trial
+              </p>
+            </div>
+
+            <!-- Corporate Plan -->
+            <div class="rounded-lg border p-8 text-center">
+              <h3 class="mb-2 text-3xl font-bold text-blue-500">$5000</h3>
+              <p class="mb-6 text-gray-600">Corporate</p>
+              <ul class="mb-8 space-y-4">
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Full Access</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Multiple User</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">Refund</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="flex items-center justify-between">
+                  <span class="text-gray-600">24/7 Support</span>
+                  <svg
+                    class="h-5 w-5 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </li>
+              </ul>
+              <button
+                class="w-full rounded-lg bg-blue-500 py-3 font-semibold text-white transition duration-300 hover:bg-blue-600"
+              >
+                Choose Plan
+              </button>
+              <p class="mt-4 text-sm text-gray-500">
+                Get your 30 days free trial
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -359,21 +445,35 @@
       <div
         class="mx-auto flex max-w-4xl flex-col items-center lg:flex-row lg:space-x-10"
       >
-        <div class="flex-shrink-0">
+        <div class="relative h-[450px] flex-shrink-0">
           <img
-            src="path-to-your-image.jpg"
+            src="png/testimonial/girl.png"
             alt="testimonial"
-            class="h-64 w-64 rounded-lg shadow-lg lg:h-80 lg:w-80"
+            class="h-[480px] w-[350] rounded-lg"
           />
+          <div
+            class="absolute -left-4 bottom-[-50px] flex w-[100px] items-center"
+          >
+            <img
+              src="png/testimonial/like.png"
+              alt="like"
+              class="z-10 h-10 w-10"
+            />
+            <img
+              src="png/testimonial/blueBg.png"
+              alt="likebg"
+              class="absolute right-[-10px] h-[76px] w-[76px]"
+            />
+          </div>
         </div>
         <div class="mt-10 lg:mt-0 lg:w-2/3">
-          <p class="text-lg font-light text-[#8480AE]">
+          <blockquote class="text-lg font-light text-[#8480AE]">
             "It's awesome service. Land from day very fill that midst stars one
             dominion. Itself was let that divided itself god don't subdue
             wherein let behold over he whose of sea moved called."
-          </p>
+          </blockquote>
           <p class="mt-5 text-xl font-semibold text-[#0B0757]">Jack Smith</p>
-          <p class="text-[#8480AE]">CEO of CABC</p>
+          <p class="text-[#8480AE]">CEO of DIANO</p>
         </div>
       </div>
     </section>
