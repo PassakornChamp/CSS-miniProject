@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agencio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
   </head>
   <body class="flex flex-col xl:px-56">
     <header class="flex h-[850px] flex-col bg-white shadow-lg lg:h-[960px]">
@@ -107,7 +108,7 @@
       </div>
       <div class="flex flex-col items-center justify-around gap-10 lg:flex-row">
         <div
-          class="box flex h-[295px] w-[285px] flex-col items-center justify-center space-y-4 transition duration-300 hover:bg-sky-100"
+          class="box space-y flex h-[295px] w-[285px] flex-col items-center justify-center transition duration-300 hover:bg-sky-100"
         >
           <img src="png/severice/greenpic.png" alt="green" class="h-20 w-20" />
           <h4 class="text-lg font-medium text-[#0B0757]">
@@ -152,42 +153,50 @@
         </div>
       </div>
     </section>
-    <section class="takeYourHand flex flex-col items-center py-20 lg:flex-row">
-      <div
-        class="imageAds relative mb-10 flex justify-center lg:mb-0 lg:basis-1/2 lg:justify-start"
-      >
-        <img
-          src="png/takeYourHand/image.png"
-          alt="takeYourHand"
-          class="h-[570px] w-[445px]"
-        />
-        <img
-          src="png/takeYourHand/dailyOrder.png"
-          alt="dailyOrder"
-          class="absolute right-[-15%] top-[60%] h-[165px] w-[155px]"
-        />
+    <section
+      class="takeYourHand relative flex flex-col items-center bg-white py-20 lg:flex-row lg:px-10"
+    >
+      <!-- Image section -->
+      <div class="relative order-2 mb-10 flex lg:order-1 lg:mb-0 lg:w-1/2">
+        <div class="flex">
+          <img
+            src="png/takeYourHand/image.png"
+            alt="People working"
+            class="mx-auto w-full max-w-md rounded-lg shadow-lg"
+          />
+          <div class="absolute bottom-[100px] left-[-70px]">
+            <img
+              src="png/takeYourHand/dailyOrder.png"
+              alt="Chart"
+              class="h-[165px] w-[155px]"
+            />
+          </div>
+        </div>
       </div>
-      <div class="textAds flex flex-col space-y-5 px-5 lg:basis-1/2 lg:px-0">
-        <h3 class="text-5xl font-medium text-[#0B0757]">
-          We Take The Work Off Your Hands
-        </h3>
-        <p class="text-base text-[#8480AE]">
+
+      <!-- Text section -->
+      <div class="order-1 space-y-6 lg:order-2 lg:w-1/2 lg:pl-20">
+        <h2 class="text-4xl font-bold leading-tight text-[#0B0757] lg:text-5xl">
+          We Take The Work Of Your Hand
+        </h2>
+        <p class="text-[#8480AE]">
           It's crafted with the latest trend of design & coded with all modern
-          approaches. It's a robust & multi-dimensional usable template. Nostrum
-          placeat hic, praesent atque ornare minim.
+          approaches. It's a robust & multi-dimensional usable. Nostrum placeat
+          hic, praesent atque ornare minim.
         </p>
-        <p class="text-base text-[#8480AE]">
-          Nihil suscipit aliquet excepteur bibendum cumque facilis senectus
+        <p class="text-[#8480AE]">
+          nihil suscipit aliquet excepteur bibendum cumque facilis senectus
           habitant aliquid cupidatat! Fugit? Nisl dignissimos ratione.
         </p>
         <button
-          class="rounded-lg bg-[#1374F6] px-4 py-2 font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-700"
+          class="rounded-lg bg-[#1374F6] px-6 py-3 font-bold text-white transition duration-300 hover:bg-blue-700"
         >
-          Get Started
+          Discover More
         </button>
       </div>
     </section>
-    <section class="priceplan bg-white py-20">
+
+    <section class="priceplan bg-white py-32">
       <div class="container mx-auto px-4">
         <div class="mb-16 text-center">
           <h3 class="mb-2 text-xl text-gray-500">Price Plan</h3>
@@ -202,7 +211,7 @@
             <div class="rounded-lg border p-8 text-center">
               <h3 class="mb-2 text-3xl font-bold text-yellow-500">$2000</h3>
               <p class="mb-6 text-gray-600">Regular</p>
-              <ul class="mb-8 space-y-4">
+              <ul class="space-y mb-8">
                 <li class="flex items-center justify-between">
                   <span class="text-gray-600">Full Access</span>
                   <svg
@@ -282,7 +291,7 @@
             <div class="rounded-lg border p-8 text-center">
               <h3 class="mb-2 text-3xl font-bold text-green-500">$3000</h3>
               <p class="mb-6 text-gray-600">Premium</p>
-              <ul class="mb-8 space-y-4">
+              <ul class="space-y mb-8">
                 <li class="flex items-center justify-between">
                   <span class="text-gray-600">Full Access</span>
                   <svg
@@ -362,7 +371,7 @@
             <div class="rounded-lg border p-8 text-center">
               <h3 class="mb-2 text-3xl font-bold text-blue-500">$5000</h3>
               <p class="mb-6 text-gray-600">Corporate</p>
-              <ul class="mb-8 space-y-4">
+              <ul class="space-y mb-8">
                 <li class="flex items-center justify-between">
                   <span class="text-gray-600">Full Access</span>
                   <svg
@@ -441,19 +450,18 @@
         </div>
       </div>
     </section>
-    <section class="testimonial bg-white py-20">
+
+    <section class="testimonial flex justify-center bg-white py-32">
       <div
-        class="mx-auto flex max-w-4xl flex-col items-center lg:flex-row lg:space-x-10"
+        class="relative flex flex-col items-center lg:flex-row lg:space-x-10"
       >
-        <div class="relative h-[450px] flex-shrink-0">
+        <div class="relative flex-shrink-0">
           <img
             src="png/testimonial/girl.png"
             alt="testimonial"
-            class="h-[480px] w-[350] rounded-lg"
+            class="h-[350px] w-[350px] rounded-lg shadow-lg lg:h-[450px] lg:w-[350px]"
           />
-          <div
-            class="absolute -left-4 bottom-[-50px] flex w-[100px] items-center"
-          >
+          <div class="absolute bottom-[-20px] left-[-20px] flex items-center">
             <img
               src="png/testimonial/like.png"
               alt="like"
@@ -462,12 +470,12 @@
             <img
               src="png/testimonial/blueBg.png"
               alt="likebg"
-              class="absolute right-[-10px] h-[76px] w-[76px]"
+              class="absolute bottom-[-10px] left-[-10px] h-[76px] w-[76px]"
             />
           </div>
         </div>
-        <div class="mt-10 lg:mt-0 lg:w-2/3">
-          <blockquote class="text-lg font-light text-[#8480AE]">
+        <div class="mt-10 text-center lg:ml-10 lg:mt-0 lg:w-2/3 lg:text-left">
+          <blockquote class="mx-auto text-lg font-light text-[#8480AE]">
             "It's awesome service. Land from day very fill that midst stars one
             dominion. Itself was let that divided itself god don't subdue
             wherein let behold over he whose of sea moved called."
@@ -477,8 +485,11 @@
         </div>
       </div>
     </section>
-    <section class="newsletter bg-white py-20">
-      <div class="mx-auto max-w-2xl text-center">
+
+    <section class="newsletter bg-[#f4f7fc] py-32">
+      <div
+        class="mx-auto max-w-2xl rounded-lg bg-white p-10 text-center shadow-lg"
+      >
         <h2 class="text-3xl font-semibold text-[#0B0757]">
           Sign up to our newsletter
         </h2>
@@ -486,35 +497,88 @@
           Receive latest news, updates and many other news every week.
         </p>
         <form class="mt-6 flex items-center justify-center">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            class="w-full max-w-md rounded-l-lg border border-r-0 border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#1374F6]"
-          />
-          <button
-            type="submit"
-            class="rounded-r-lg bg-[#1374F6] p-3 text-white"
-          >
-            Subscribe
-          </button>
+          <div class="relative flex w-full max-w-md">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="flex-1 rounded-l-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-[#1374F6]"
+            />
+            <button
+              type="submit"
+              class="flex items-center justify-center rounded-r-lg bg-[#1374F6] p-3 text-white"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </section>
-    <footer class="bg-white py-10">
+    <footer class="bg-white py-10" id="footer">
       <div
         class="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4"
       >
-        <div>
-          <h3 class="text-xl font-semibold text-[#0B0757]">Agencio</h3>
-          <p class="mt-4 text-sm text-[#8480AE]">
-            Merged moving recently month creature for shalt and a divide the the
-            day seas male shall that doesn't won't for him. Male. Draw a great
-            nigh.
+        <div class="flex flex-col items-start">
+          <div class="flex">
+            <img
+              src="png/logo/polygon1.png"
+              alt="logo"
+              class="mb-4 h-12 w-12"
+            />
+            <img
+              src="png/logo/polygon2.png"
+              alt="logo"
+              class="mb-4 h-12 w-12"
+            />
+            <h1 class="text-2xl font-medium text-[#0B0757]">Agencio</h1>
+          </div>
+
+          <p class="text-left text-sm text-[#8480AE] sm:text-left">
+            Winged moving moveth created for shall and a divide the their days
+            male midst shall hath doesn't won't for. Midst life.Over a great
+            night.
           </p>
+          <div class="mt-4 flex space-x-4">
+            <a href="#"
+              ><img
+                src="png/social/facebook.png"
+                alt="Facebook"
+                class="h-6 w-6"
+            /></a>
+            <a href="#"
+              ><img src="png/social/twitter.png" alt="Twitter" class="h-6 w-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="png/social/linkedin.png"
+                alt="LinkedIn"
+                class="h-6 w-6"
+            /></a>
+            <a href="#"
+              ><img src="png/social/youtube.png" alt="YouTube" class="h-6 w-6"
+            /></a>
+          </div>
         </div>
         <div>
-          <h3 class="text-xl font-semibold text-[#0B0757]">Features</h3>
-          <ul class="mt-4 space-y-2">
+          <h3
+            class="cursor-pointer text-xl font-semibold text-[#0B0757]"
+            @click="toggleSection('features')"
+          >
+            Features
+          </h3>
+          <ul class="mt-4 hidden space-y-2 lg:block" v-if="sections.features">
             <li>
               <a href="#" class="text-sm text-[#8480AE] hover:underline"
                 >Analytics</a
@@ -538,8 +602,13 @@
           </ul>
         </div>
         <div>
-          <h3 class="text-xl font-semibold text-[#0B0757]">About</h3>
-          <ul class="mt-4 space-y-2">
+          <h3
+            class="cursor-pointer text-xl font-semibold text-[#0B0757]"
+            @click="toggleSection('about')"
+          >
+            About
+          </h3>
+          <ul class="mt-4 hidden space-y-2 lg:block" v-if="sections.about">
             <li>
               <a href="#" class="text-sm text-[#8480AE] hover:underline"
                 >Blog</a
@@ -563,8 +632,16 @@
           </ul>
         </div>
         <div>
-          <h3 class="text-xl font-semibold text-[#0B0757]">Resources</h3>
-          <ul class="mt-4 space-y-2">
+          <h3
+            class="cursor-pointer text-xl font-semibold text-[#0B0757]"
+            @click="toggleSection('resources')"
+          >
+            Resources
+          </h3>
+          <ul
+            class="lg: mt-4 hidden space-y-2 lg:block"
+            v-if="sections.resources"
+          >
             <li>
               <a href="#" class="text-sm text-[#8480AE] hover:underline"
                 >Application Security</a
@@ -588,6 +665,28 @@
           </ul>
         </div>
       </div>
+      <div class="mt-10 text-center">
+        <p class="text-sm text-[#8480AE]">Copyright ©2020 Agencio</p>
+      </div>
     </footer>
+    <script>
+      new Vue({
+        el: "#footer",
+        data() {
+          return {
+            sections: {
+              features: true,
+              about: true,
+              resources: true,
+            },
+          };
+        },
+        methods: {
+          toggleSection(section) {
+            this.sections[section] = !this.sections[section];
+          },
+        },
+      });
+    </script>
   </body>
 </html>
